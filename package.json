@@ -2,6 +2,7 @@
   "name": "react-start-template",
   "version": "1.0.0",
   "description": "Start repo with required configuration",
+  "homepage": "https://izvolte-save.github.io/react-start-template/",
   "main": "src/index.tsx",
   "author": "Igor <spirit-drive@yandex.ru>",
   "scripts": {
@@ -10,6 +11,8 @@
     "test": "jest src",
     "lint": "eslint src --fix",
     "storybook": "storybook dev -p 6006",
+    "predeplay": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-storybook": "storybook build"
   },
   "license": "MIT",
@@ -46,6 +49,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.8.0",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.1",
     "husky": "^8.0.0",
     "jest": "^29.5.0",
